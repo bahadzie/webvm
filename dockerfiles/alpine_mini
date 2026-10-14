@@ -1,0 +1,20 @@
+# FROM alpine:3.24
+FROM --platform=linux/386 alpine:3.24
+
+RUN apk add tree openssh mandoc man-pages docs bash nano
+
+RUN addgroup -S user -g 1000 && adduser -S user -u 1000 -G user && echo "user:password" | chpasswd
+
+# COPY --chown=user:user ./examples /home/user/examples
+# RUN chmod -R +x  /home/user/examples/lua
+
+WORKDIR /home/user/
+
+ENV HOME="/home/user" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="nano" LANG="C.UTF-8"
+RUN export PS1=\u@\h:\w\$
+
+# USER user
+
+CMD [ "/bin/bash" ]
+
+# RUN apk add --update python py-pip ca-certificates
