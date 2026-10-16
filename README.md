@@ -64,7 +64,7 @@ Please attempt the following
 - *answers.txt Line 6*: command used for ⬆️
 - combine *tree_output.txt* twice and save it as *2xtree_output.txt*
 - *answers.txt Line 7*: command used for ⬆️
-- using `tree --help` find the parameter you can add to the `tree` to show the size of files and folders in a human readable way.
+- using `tree --help` find the parameter you can add to `tree` to show the size of files and folders in a human readable way.
 - *answers.txt Line 8*: command used for ⬆️
 - the command `grep exercise tree_output.txt` will search for the word *exercise* in the file *tree_output.txt*. What parameter can you add to `grep` to show the line numbers of the search term *exercise* in *tree_output.txt*.
 - *answers.txt Line 9*: command used for ⬆️
