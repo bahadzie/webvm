@@ -48,11 +48,11 @@ To save any edits,
 ## Day 2
 
 ### Exercises
-Please attempt the following exercises
+Please attempt the following
 
 - In your home folder create a new folder called *exercises*
-- Move to the exercises folder
-- Create a new file called `answers.txt`
+- Move to the *exercises* folder
+- Create a new file called *answers.txt*
 - Run the following command `tree / > tree_output.txt`
 - *answers.txt Line 1*: size in Kb of *tree_output.txt*
 - *answers.txt Line 2*: command used for ⬆️
