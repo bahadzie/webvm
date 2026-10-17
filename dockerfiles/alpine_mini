@@ -11,6 +11,7 @@ RUN addgroup -S user -g 1000 && adduser -S user -u 1000 -G user && echo "user:pa
 WORKDIR /home/user/
 
 ENV HOME="/home/user" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="nano" LANG="C.UTF-8"
-RUN echo "export PS1='\u@\h:\w\$ '" >> /etc/bash/bashrc
+RUN echo "export PS1='\u@linux_vm:\w\$ '" >> /etc/bash/bashrc
+
 
 CMD [ "/bin/bash" ]
